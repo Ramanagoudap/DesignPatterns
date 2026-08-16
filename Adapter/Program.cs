@@ -5,7 +5,6 @@
 		static void Main(string[] args)
 		{
 			// Using PayPal directly
-			// Using PayPal directly
 			IPaymentProcessor paypalProcessor = new PayPalPaymentProcessor();
 			paypalProcessor.ProcessPayment(100);
 

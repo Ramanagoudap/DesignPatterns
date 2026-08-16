@@ -40,7 +40,7 @@
 		{
 			private Singleton() { }
 
-			private static Singleton _instance;
+			private static Singleton? _instance;
 
 			// We now have a lock object that will be used to synchronize threads during first access to the Singleton.
 			private static readonly object _lock = new object();
@@ -68,7 +68,7 @@
 						if (_instance == null)
 						{
 							_instance = new Singleton();
-							_instance.Value = value;
+                            _instance.Value = value;
 						}
 					}
 				}
